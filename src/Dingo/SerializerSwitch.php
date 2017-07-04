@@ -15,7 +15,7 @@ class SerializerSwitch
         'data_array_null' => 'Liyu\Dingo\Serializers\DataArraySerializer',
     ];
 
-    protected getDriver($name)
+    protected function getDriver($name)
     {
         if (array_key_exists($name, $this->drivers)) {
             return $this->drivers[$name];
