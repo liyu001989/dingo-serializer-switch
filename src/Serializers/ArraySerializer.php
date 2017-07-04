@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace App\Transformers\Serializers;
+namespace Liyu\Dingo\Serializers;
 
-use League\Fractal\Serializer\ArraySerializer;
+use League\Fractal\Serializer\ArraySerializer as BaseSerializer;
 
-class NullArraySerializer extends ArraySerializer
+class ArraySerializer extends BaseSerializer
 {
     /**
      * Serialize null resource.

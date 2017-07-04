@@ -22,6 +22,6 @@ class DataArraySerializer extends BaseSerializer
      */
     public function null()
     {
-        return null;
+        return ['data' => null];
     }
 }
