@@ -18,6 +18,7 @@ $api->version('v1',
 $api->version('v2',
     ['middleware' => 'serializer:data_array'],
     function ($api) {
+});
 ```
 
 
