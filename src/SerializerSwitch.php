@@ -37,7 +37,6 @@ class SerializerSwitch
 
         app('Dingo\Api\Transformer\Factory')->setAdapter(function ($app) use($driver) {
             $fractal = new \League\Fractal\Manager;
-            $serializer = new \App\Transformers\Serializers\ArraySerializer();
             $serializer = new $driver;
 
             $fractal->setSerializer($serializer);
