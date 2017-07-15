@@ -5,7 +5,7 @@ This is a middleware for dingo/api to switch serializer
 ## Installation
 
 - `composer require liyu/dingo-serializer-switch`
-- 增加 `serializer => \Liyu\Dingo\SerializerSwitch` 到 routeMiddleware
+- 增加 `'serializer' => \Liyu\Dingo\SerializerSwitch::class` 到 routeMiddleware
 
 ## Usage
 
