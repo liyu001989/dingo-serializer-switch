@@ -18,7 +18,7 @@ class SerializerSwitch
 
     protected function getDriver($name)
     {
-        $name = array_key_exists($name, $this->drivers) ?: 'data_array';
+        $name = array_key_exists($name, $this->drivers) ? $name : 'data_array';
         return $this->drivers[$name];
     }
 
