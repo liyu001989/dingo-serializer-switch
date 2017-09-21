@@ -22,17 +22,17 @@ $api->version('v2',
 ```
 
 
-可以使用下面的参数，如果使用 data_array 可以不使用这个中间件，默认就是 data_array
+default key is data_array.
 
 ```
-'array' => 'League\Fractal\Serializer\ArraySerializer',
-'data_array' => 'League\Fractal\Serializer\DataArraySerializer',
+'default_array' => 'League\Fractal\Serializer\ArraySerializer',
+'default_data_array' => 'League\Fractal\Serializer\DataArraySerializer',
 'json_api' => 'League\Fractal\Serializer\JsonApiSerializer',
 
 // extend array null resource return null instead of []
-'array_null' => 'Liyu\Dingo\Serializers\ArraySerializer',
+'array' => 'Liyu\Dingo\Serializers\ArraySerializer',
 // extend data_array null resource return null instead of []
-'data_array_null' => 'Liyu\Dingo\Serializers\DataArraySerializer',
+'data_array' => 'Liyu\Dingo\Serializers\DataArraySerializer',
 ```
 
 ## License
