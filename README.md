@@ -5,7 +5,7 @@ This is a middleware for dingo/api to switch serializer
 ## Installation
 
 - `composer require liyu/dingo-serializer-switch`
-- 增加 `'serializer' => \Liyu\Dingo\SerializerSwitch::class` 到 routeMiddleware
+- add `'serializer' => \Liyu\Dingo\SerializerSwitch::class` to routeMiddleware
 
 ## Usage
 
@@ -16,13 +16,17 @@ $api->version('v1',
 });
 
 $api->version('v2',
+    ['middleware' => 'serializer'],
+    function ($api) {
+});
+
+$api->version('v3',
     ['middleware' => 'serializer:data_array'],
     function ($api) {
 });
 ```
 
-
-default key is data_array.
+default key is data_array, so v2 v3 is same.
 
 ```
 'default_array' => 'League\Fractal\Serializer\ArraySerializer',
