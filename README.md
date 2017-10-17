@@ -2,6 +2,11 @@
 
 This is a middleware for dingo/api to switch serializer
 
+If a resource's relationship is null, we can return `$this->null()` in a transformer. But default serializer return [], I think null is better. 
+Also when pagination has no links, default is [], I wish to return null. So I write two serializer to fix this.
+
+If you want to use default serializer just use `default_array` or `default_data_array`.
+
 ## Installation
 
 - `composer require liyu/dingo-serializer-switch`
@@ -33,9 +38,7 @@ default key is data_array, so v2 v3 is same.
 'default_data_array' => 'League\Fractal\Serializer\DataArraySerializer',
 'json_api' => 'League\Fractal\Serializer\JsonApiSerializer',
 
-// extend array null resource return null instead of []
 'array' => 'Liyu\Dingo\Serializers\ArraySerializer',
-// extend data_array null resource return null instead of []
 'data_array' => 'Liyu\Dingo\Serializers\DataArraySerializer',
 ```
 
