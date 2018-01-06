@@ -10,7 +10,6 @@ If you want to use default serializer just use `default_array` or `default_data_
 ## Installation
 
 - `composer require liyu/dingo-serializer-switch`
-- add `'serializer' => \Liyu\Dingo\SerializerSwitch::class` to routeMiddleware
 
 ## Usage
 
