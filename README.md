@@ -10,6 +10,22 @@ If you want to use default serializer just use `default_array` or `default_data_
 ## Installation
 
 - `composer require liyu/dingo-serializer-switch`
+- laravel
+```php
+// app/Http/Kernel.php
+protected $routeMiddleware = [
+    //..    
+    'serializer' => Liyu\Dingo\SerializerSwitch::class,
+];
+```
+- lumen
+```php
+// in bootstrap/app.php
+$app->routeMiddleware([
+    // ...
+    'serializer' => Liyu\Dingo\SerializerSwitch::class,
+]);
+```
 
 ## Usage
 
