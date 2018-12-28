@@ -15,12 +15,5 @@
         "psr-4": {
             "Liyu\\Dingo\\": "src"
         }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Liyu\\Dingo\\ServiceProvider"
-            ]
-        }
     }
 }
