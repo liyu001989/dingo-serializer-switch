@@ -17,6 +17,6 @@
         }
     },
    "suggest": {
-       "league/fractal": "Required to use the Json Api (0.17.*)."
+       "league/fractal": "Required to use the Json Api."
    },
 }
