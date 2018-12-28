@@ -9,7 +9,8 @@
         }
     ],
     "require": {
-        "php": ">=7.0"
+        "php": ">=7.0",
+        "dingo/api": "^2.0.0-alpha1"
     },
     "autoload": {
         "psr-4": {
