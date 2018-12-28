@@ -15,5 +15,8 @@
         "psr-4": {
             "Liyu\\Dingo\\": "src"
         }
-    }
+    },
+   "suggest": {
+       "league/fractal": "Required to use the Json Api (0.17.*)."
+   },
 }
