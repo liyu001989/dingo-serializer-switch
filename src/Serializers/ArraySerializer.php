@@ -19,9 +19,9 @@ class ArraySerializer extends BaseSerializer
     /**
      * Serialize null resource.
      *
-     * @return array
+     * @return array|null
      */
-    public function null()
+    public function null(): ?array
     {
         return null;
     }
@@ -33,7 +33,7 @@ class ArraySerializer extends BaseSerializer
      *
      * @return array
      */
-    public function paginator(PaginatorInterface $paginator)
+    public function paginator(PaginatorInterface $paginator): array
     {
         $currentPage = (int) $paginator->getCurrentPage();
         $lastPage = (int) $paginator->getLastPage();
